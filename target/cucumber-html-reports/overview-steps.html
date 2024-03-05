@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 2.0) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Facebook_Cucumber</td>
+              <td>2.0</td>
+            <td>02 Mar 2024, 16:52</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">CreateAccount.click_on_create_new_account()</td>
+              <td>1</td>
+              <td class="duration" data-value="710063400">0.710</td>
+              <td class="duration" data-value="710063400">0.710</td>
+              <td class="duration" data-value="710063400">0.710</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.create_new_user_account_in_db_after_validating_all_input_fields(String,String,String,String,String,String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1431100">0.001</td>
+              <td class="duration" data-value="1431100">0.001</td>
+              <td class="duration" data-value="1431100">0.001</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.take_screenshot_after_validation(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="20293427600">20.293</td>
+              <td class="duration" data-value="20293427600">20.293</td>
+              <td class="duration" data-value="20293427600">20.293</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_clicks_on_sign_up_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="147918500">0.147</td>
+              <td class="duration" data-value="147918500">0.147</td>
+              <td class="duration" data-value="147918500">0.147</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_enters_first_name(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1846058400">1.846</td>
+              <td class="duration" data-value="1846058400">1.846</td>
+              <td class="duration" data-value="1846058400">1.846</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_enters_mobile_number_or_email_address(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="321321900">0.321</td>
+              <td class="duration" data-value="321321900">0.321</td>
+              <td class="duration" data-value="321321900">0.321</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_enters_password(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="154215500">0.154</td>
+              <td class="duration" data-value="154215500">0.154</td>
+              <td class="duration" data-value="154215500">0.154</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_enters_surname(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="184649800">0.184</td>
+              <td class="duration" data-value="184649800">0.184</td>
+              <td class="duration" data-value="184649800">0.184</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_selects_date_of_birth(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1524443300">1.524</td>
+              <td class="duration" data-value="1524443300">1.524</td>
+              <td class="duration" data-value="1524443300">1.524</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_selects_gender(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="100506600">0.100</td>
+              <td class="duration" data-value="100506600">0.100</td>
+              <td class="duration" data-value="100506600">0.100</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_selects_month_of_birth(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="131734700">0.131</td>
+              <td class="duration" data-value="131734700">0.131</td>
+              <td class="duration" data-value="131734700">0.131</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.user_selects_year_of_birth(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2772839300">2.772</td>
+              <td class="duration" data-value="2772839300">2.772</td>
+              <td class="duration" data-value="2772839300">2.772</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CreateAccount.validate_if_user_account_exists_in_db(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="11122716800">11.122</td>
+              <td class="duration" data-value="11122716800">11.122</td>
+              <td class="duration" data-value="11122716800">11.122</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.closingBrowser(Scenario)</td>
+              <td>3</td>
+              <td class="duration" data-value="193184933">0.193</td>
+              <td class="duration" data-value="193184933">0.216</td>
+              <td class="duration" data-value="579554800">0.579</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.launchingBrowser(Scenario)</td>
+              <td>3</td>
+              <td class="duration" data-value="14459379900">14.459</td>
+              <td class="duration" data-value="14459379900">18.178</td>
+              <td class="duration" data-value="43378139700">43.378</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UserLogin.user_clicks_on_login_button()</td>
+              <td>2</td>
+              <td class="duration" data-value="98710450">0.098</td>
+              <td class="duration" data-value="98710450">0.117</td>
+              <td class="duration" data-value="197420900">0.197</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UserLogin.user_enters_email_address_or_phone_number(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="146334850">0.146</td>
+              <td class="duration" data-value="146334850">0.153</td>
+              <td class="duration" data-value="292669700">0.292</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UserLogin.user_enters_the_password(String)</td>
+              <td>2</td>
+              <td class="duration" data-value="136974450">0.136</td>
+              <td class="duration" data-value="136974450">0.138</td>
+              <td class="duration" data-value="273948900">0.273</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">UserLogin.validate_the_user_credentials_in_db_and_proceed_to_homepage(String,String,String)</td>
+              <td>2</td>
+              <td class="duration" data-value="4937178850">4.937</td>
+              <td class="duration" data-value="4937178850">6.693</td>
+              <td class="duration" data-value="9874357700">9.874</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>19</td>
+            <td>27</td>
+            <td class="duration">3.478</td>
+            <td class="duration">43.378</td>
+            <td class="duration">1:33.907</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

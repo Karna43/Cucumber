@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.facebook.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 95.192 s - in com.facebook.runner.TestRunner
