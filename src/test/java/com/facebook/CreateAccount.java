@@ -15,6 +15,7 @@ import org.openqa.selenium.WebElement;
 
 import com.facebook.basefunctions.BaseClass;
 import com.facebook.locators.CreateAccountLocators;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -23,7 +24,7 @@ import io.cucumber.java.en.When;
 public class CreateAccount {
 	
 	public static BaseClass base = BaseClass.getInstance();
-	public static CreateAccountLocators locators = CreateAccountLocators.getInstance();
+	public static CreateAccountLocators locators;
 	public static FileOutputStream writeFile;
 	public static XSSFWorkbook readWorkbook;
 	public static XSSFSheet readSheet;
@@ -34,6 +35,7 @@ public class CreateAccount {
 	
 	@Given("Click on Create new account")
 	public void click_on_create_new_account() {
+		locators = new CreateAccountLocators(BaseClass.driver);
 		base.button(locators.getNewAccount());
 	}
 
@@ -157,7 +159,8 @@ public class CreateAccount {
 			Thread.sleep(15000);
 			base.screenshot(firstname);
 			Thread.sleep(5000);	
-			} catch (Exception e) {
+			} 
+		catch (Exception e) {
 			e.printStackTrace();
 		}
 	}

@@ -1,24 +1,14 @@
 package com.facebook.locators;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.facebook.basefunctions.BaseClass;
-
 public class CreateAccountLocators{
 	
-	public static CreateAccountLocators locators = null;
-	
-	private CreateAccountLocators() {
-		PageFactory.initElements(BaseClass.driver, this);
-	}
-
-	public static CreateAccountLocators getInstance() {
-		if(locators == null) {
-			locators = new CreateAccountLocators();
-	 	}
-		return locators;
+	public CreateAccountLocators(WebDriver driver) {
+		PageFactory.initElements(driver, this);
 	}
 	
 //	@FindBys({@FindBy(className = "fb"), @FindBy(id = "signup")})

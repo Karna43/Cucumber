@@ -20,7 +20,7 @@ public class Hooks {
 	public void closingBrowser(Scenario scenario) {
 		final byte[] source= ((TakesScreenshot) BaseClass.driver).getScreenshotAs(OutputType.BYTES);
 		scenario.embed(source, "image/png");
-		//BaseClass.browserQuit();
+		BaseClass.browserQuit();
 		
 	}
 }

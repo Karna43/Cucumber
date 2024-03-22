@@ -19,15 +19,15 @@ import io.cucumber.java.en.When;
 public class UserLogin {
 	
 	public static BaseClass base = BaseClass.getInstance();
-	public static LoginAccountLocators locators = LoginAccountLocators.getInstance();
+	public static LoginAccountLocators locators;
 	public static XSSFWorkbook readWorkbook;
 	public static XSSFSheet readSheet;
 	public static String password;
 	public static XSSFCell mobile;
-	public static boolean flag = true;
 	
 	@When("User enters email address or phone number {string}")
 	public void user_enters_email_address_or_phone_number(String mobileNo) {
+		locators = new LoginAccountLocators(BaseClass.driver);
 		base.sendText(locators.getMobile(), mobileNo);
 	}
 
@@ -69,7 +69,6 @@ public class UserLogin {
 	
 	@Then("Validate all the urls working as expected")
 	public void validate_all_the_urls_working_as_expected() {
-		if(flag = true) {
 			try {
 				List<WebElement> links =locators.getLink();
 				Iterator<WebElement> iterator = links.iterator();
@@ -92,11 +91,9 @@ public class UserLogin {
 						}
 					}
 				}
-				flag = false;
 			}
 			catch(Exception e) {
 				e.printStackTrace();
 			}
 		}
-	}
 }

@@ -33,7 +33,7 @@ public class BaseClass {
 			if(base == null) {
 				base = new BaseClass();
 			}
-			return new BaseClass();
+			return base;
 		}
 		
 		public static WebDriver driver;

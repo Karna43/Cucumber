@@ -90,6 +90,42 @@ formatter.examples({
         "1995",
         "Male"
       ]
+    },
+    {
+      "cells": [
+        "Kirthik",
+        "J",
+        "2222222222",
+        "kirthik",
+        "20",
+        "May",
+        "1997",
+        "Male"
+      ]
+    },
+    {
+      "cells": [
+        "Ranjith",
+        "S",
+        "3333333333",
+        "ranjith",
+        "25",
+        "Feb",
+        "1997",
+        "Male"
+      ]
+    },
+    {
+      "cells": [
+        "Priya",
+        "P",
+        "4444444444",
+        "priya",
+        "10",
+        "Dec",
+        "1999",
+        "Female"
+      ]
     }
   ]
 });
@@ -246,6 +282,465 @@ formatter.embedding("image/png", "embedded1.png", null);
 formatter.after({
   "status": "passed"
 });
+formatter.background({
+  "name": "Facebook launching function",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.embedding("image/png", "embedded2.png", null);
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Create new account",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateAccount.click_on_create_new_account()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User enters values for all fields and Click on create new account",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@createaccount"
+    }
+  ]
+});
+formatter.step({
+  "name": "User enters first name \"Kirthik\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_first_name(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters surname \"J\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_surname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters mobile number or email address \"2222222222\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_mobile_number_or_email_address(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters password \"kirthik\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_password(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects date of birth \"20\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_date_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects month of birth \"May\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_month_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects year of birth \"1997\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_year_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects gender \"Male\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_gender(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on sign up button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_clicks_on_sign_up_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Validate if user account exists in db \"2222222222\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateAccount.validate_if_user_account_exists_in_db(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Create new user account in db after validating all input fields \"Kirthik\"\"J\"\"2222222222\"\"20\"\"May\"\"1997\"\"Male\"\"kirthik\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.create_new_user_account_in_db_after_validating_all_input_fields(String,String,String,String,String,String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Take screenshot after validation \"Kirthik\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.take_screenshot_after_validation(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded3.png", null);
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "Facebook launching function",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.embedding("image/png", "embedded4.png", null);
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Create new account",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateAccount.click_on_create_new_account()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User enters values for all fields and Click on create new account",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@createaccount"
+    }
+  ]
+});
+formatter.step({
+  "name": "User enters first name \"Ranjith\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_first_name(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters surname \"S\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_surname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters mobile number or email address \"3333333333\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_mobile_number_or_email_address(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters password \"ranjith\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_password(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects date of birth \"25\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_date_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects month of birth \"Feb\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_month_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects year of birth \"1997\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_year_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects gender \"Male\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_gender(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on sign up button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_clicks_on_sign_up_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Validate if user account exists in db \"3333333333\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateAccount.validate_if_user_account_exists_in_db(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Create new user account in db after validating all input fields \"Ranjith\"\"S\"\"3333333333\"\"25\"\"Feb\"\"1997\"\"Male\"\"ranjith\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.create_new_user_account_in_db_after_validating_all_input_fields(String,String,String,String,String,String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Take screenshot after validation \"Ranjith\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.take_screenshot_after_validation(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded5.png", null);
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "Facebook launching function",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.embedding("image/png", "embedded6.png", null);
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Click on Create new account",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "CreateAccount.click_on_create_new_account()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "User enters values for all fields and Click on create new account",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@createaccount"
+    }
+  ]
+});
+formatter.step({
+  "name": "User enters first name \"Priya\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_first_name(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters surname \"P\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_surname(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters mobile number or email address \"4444444444\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_mobile_number_or_email_address(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User enters password \"priya\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_enters_password(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects date of birth \"10\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_date_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects month of birth \"Dec\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_month_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects year of birth \"1999\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_year_of_birth(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User selects gender \"Female\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_selects_gender(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on sign up button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.user_clicks_on_sign_up_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Validate if user account exists in db \"4444444444\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "CreateAccount.validate_if_user_account_exists_in_db(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Create new user account in db after validating all input fields \"Priya\"\"P\"\"4444444444\"\"10\"\"Dec\"\"1999\"\"Female\"\"priya\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.create_new_user_account_in_db_after_validating_all_input_fields(String,String,String,String,String,String,String,String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Take screenshot after validation \"Priya\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "CreateAccount.take_screenshot_after_validation(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded7.png", null);
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("file:src/test/resources/facebooklogin.feature");
 formatter.feature({
   "name": "Facebook Login",
@@ -317,7 +812,7 @@ formatter.scenario({
     }
   ]
 });
-formatter.embedding("image/png", "embedded2.png", null);
+formatter.embedding("image/png", "embedded8.png", null);
 formatter.before({
   "status": "passed"
 });
@@ -371,7 +866,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded3.png", null);
+formatter.embedding("image/png", "embedded9.png", null);
 formatter.after({
   "status": "passed"
 });
@@ -385,7 +880,7 @@ formatter.scenario({
     }
   ]
 });
-formatter.embedding("image/png", "embedded4.png", null);
+formatter.embedding("image/png", "embedded10.png", null);
 formatter.before({
   "status": "passed"
 });
@@ -439,7 +934,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.embedding("image/png", "embedded5.png", null);
+formatter.embedding("image/png", "embedded11.png", null);
 formatter.after({
   "status": "passed"
 });

@@ -2,25 +2,15 @@ package com.facebook.locators;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.facebook.basefunctions.BaseClass;
-
 public class LoginAccountLocators{
 	
-	public static LoginAccountLocators locators = null;
-	
-	private LoginAccountLocators() {
-		PageFactory.initElements(BaseClass.driver, this);
-	}
-
-	public static LoginAccountLocators getInstance() {
-		if(locators == null) {
-			locators = new LoginAccountLocators();
-	 	}
-		return locators;
+	public LoginAccountLocators(WebDriver driver) {
+		PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath = "//input[@id='email']")
